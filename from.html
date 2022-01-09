@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nav-bar>ul>li>a {
+            text-decoration: none;
+            color: hotpink;
+            margin: 5px;
+            padding: 4px 20px;
+            background-color: gray;
+        }
+
+        .nav-bar>ul>li:hover a {
+            color: lavender;
+        }
+
+        .nav-bar>ul {
+            list-style-type: none;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+        }
+
+        .nested-menu>ul>li>a {
+            display: block;
+
+
+        }
+
+        .nesty {
+            margin: 4px;
+            padding: 0;
+        }
+
+        .nesty>li {
+            list-style-type: none;
+            font-weight: bold;
+            margin: 1px;
+            background-color: lightcoral;
+        }
+
+        .nesty>li>a {
+            text-decoration: none;
+
+        }
+
+        .nesty {
+            display: none;
+            position: absolute;
+        }
+
+        .nav-bar>ul>li:hover>.nesty {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="nested-menu" href="table.html">Table
+                    <ul class="nesty">
+                        <li><a href="">class-1</a></li>
+                        <li><a href="">class-2</a></li>
+                        <li><a href="">class-3</a></li>
+                    </ul>
+                </a></li>
+            <li><a href="div.html">Box</a></li>
+            <li><a href="from.html">Animation</a></li>
+        </ul>
+    </nav>
+    <form action="">
+        <p>Name:<input type="text"></p>
+        <p>Email:<input type="email"></p>
+        <p>Password:<input type="password"></p>
+        <p>Re-password:<input type="password"></p>
+        <input type="radio" name="gender" id="Male" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="Female">Female</label>
+        <fieldset>
+            <legend>what place you go previously
+            </legend>
+            <input type="checkbox" name="" id="">Sajek
+            <input type="checkbox" name="" id="">saint martin
+        </fieldset>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+
+</html>

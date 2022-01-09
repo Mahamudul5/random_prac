@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div clear</title>
+    <style>
+        .parent {
+            display: flex;
+
+        }
+
+        .box {
+            background-color: blueviolet;
+            width: 50px;
+            height: 50px;
+            padding: 50px;
+            margin-top: 20px;
+            margin-left: 35px;
+            border: 1px solid black;
+
+        }
+
+        .box:hover {
+            cursor: pointer;
+            box-shadow: 7px 7px 20px gray
+        }
+
+        body {
+            margin: 0 20px auto;
+        }
+
+        .nav-bar>ul>li>a {
+            text-decoration: none;
+            color: hotpink;
+            margin: 5px;
+            padding: 4px 20px;
+            background-color: gray;
+        }
+
+        .nav-bar>ul>li:hover a {
+            color: lavender;
+        }
+
+        .nav-bar>ul {
+            list-style-type: none;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+        }
+
+        .nested-menu>ul>li>a {
+            display: block;
+
+
+        }
+
+        .nesty {
+            margin: 4px;
+            padding: 0;
+        }
+
+        .nesty>li {
+            list-style-type: none;
+            font-weight: bold;
+            margin: 1px;
+            background-color: lightcoral;
+        }
+
+        .nesty>li>a {
+            text-decoration: none;
+
+        }
+
+        .nesty {
+            display: none;
+            position: absolute;
+        }
+
+        .nav-bar>ul>li:hover>.nesty {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="nested-menu" href="table.html">Table
+                    <ul class="nesty">
+                        <li><a href="">class-1</a></li>
+                        <li><a href="">class-2</a></li>
+                        <li><a href="">class-3</a></li>
+                    </ul>
+                </a></li>
+            <li><a href="div.html">Box</a></li>
+            <li><a href="from.html">Animation</a></li>
+        </ul>
+    </nav>
+    <div class="parent">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+</body>
+
+</html>

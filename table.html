@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        thead,
+        td,
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            background-color: coral;
+            border-radius: 6px;
+
+        }
+
+        thead {
+            font-weight: bold;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        h1 {
+
+            text-align: center;
+        }
+
+        .nav-bar>ul>li>a {
+            text-decoration: none;
+            color: hotpink;
+            margin: 5px;
+            padding: 4px 20px;
+            background-color: gray;
+        }
+
+        .nav-bar>ul>li:hover a {
+            color: lavender;
+        }
+
+        .nav-bar>ul {
+            list-style-type: none;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+        }
+
+        .nested-menu>ul>li>a {
+            display: block;
+
+
+        }
+
+        .nesty {
+            margin: 4px;
+            padding: 0;
+        }
+
+        .nesty>li {
+            list-style-type: none;
+            font-weight: bold;
+            margin: 1px;
+            background-color: lightcoral;
+        }
+
+        .nesty>li>a {
+            text-decoration: none;
+
+        }
+
+        .nesty {
+            display: none;
+            position: absolute;
+        }
+
+        .nav-bar>ul>li:hover>.nesty {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header class="head">
+        <h1>student Information</h1>
+    </header> -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="nested-menu" href="table.html">Table
+                    <ul class="nesty">
+                        <li><a href="">class-1</a></li>
+                        <li><a href="">class-2</a></li>
+                        <li><a href="">class-3</a></li>
+                    </ul>
+                </a></li>
+            <li><a href="div.html">Box</a></li>
+            <li><a href="from.html">Animation</a></li>
+        </ul>
+    </nav>
+    <table>
+        <h1>Student Information</h1>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>roll</td>
+                <td>result</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>mahamudul</td>
+            <td>7</td>
+            <td>a+</td>
+        </tr>
+        <tr>
+            <td>sifaat</td>
+            <td>8</td>
+            <td>a+</td>
+
+        </tr>
+        <tr>
+            <td>shurov</td>
+            <td>9</td>
+            <td>a+</td>
+        </tr>
+    </table>
+</body>
+
+</html>
